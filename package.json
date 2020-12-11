@@ -1,21 +1,21 @@
 {
-  "name": "usesocket",
-  "version": "1.0.0",
+  "name": "react-use-socket",
+  "version": "1.0.5",
   "description": "React Hook for Socket.io Client",
-  "main": "dist/usesocket.js",
-  "umd:main": "dist/usesocket.umd.js",
-  "module": "dist/usesocket.module.js",
-  "jsnext:main": "dist/usesocket.module.js",
-  "react-native": "dist/usesocket.module.js",
+  "main": "dist/react-use-socket.js",
+  "umd:main": "dist/react-use-socket.umd.js",
+  "module": "dist/react-use-socket.module.js",
+  "jsnext:main": "dist/react-use-socket.module.js",
+  "react-native": "dist/react-use-socket.module.js",
   "typings": "dist/index.d.ts",
   "source": "src/index.tsx",
   "scripts": {
-    "build": "microbundle",
+    "build": "microbundle --jsx React.createElement",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/comingAlive/usesocket.git"
+    "url": "git+https://github.com/comingAlive/react-use-socket.git"
   },
   "files": [
     "dist/"
@@ -29,17 +29,17 @@
   "author": "Max Aiwon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/comingAlive/usesocket/issues"
+    "url": "https://github.com/comingAlive/react-use-socket/issues"
   },
-  "homepage": "https://github.com/comingAlive/usesocket#readme",
+  "homepage": "https://github.com/comingAlive/react-use-socket#readme",
   "peerDependencies": {
     "socket.io-client": "^3.0.0",
     "react": "^17.0.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
-    "microbundle": "^0.12.4",
     "socket.io-client": "^3.0.0",
+    "microbundle": "^0.12.4",
     "typescript": "^4.0.0"
   }
 }

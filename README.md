@@ -1,4 +1,4 @@
-# usesocket
+# react-use-socket
 
 React [hook](https://reactjs.org/docs/hooks-intro.html)
 for [Socket.io Client](https://github.com/socketio/socket.io-client).
@@ -7,18 +7,20 @@ Using React Context API.
 
 # Installation
 
-`npm install socket.io-client usesocket`
+`npm install socket.io-client react-use-socket`
 
-`yarn add socket.io-client usesocket`
+`yarn add socket.io-client react-use-socket`
 
 # How to use (example for Next.js)
 
-1) ## `env.local`
+1) ## `.env.local`
 
-Create `env.local` file in the root folder and add the `NEXT_PUBLIC_SOCKET_URI` or `SOCKET_URI` variable:
+( skip this step for default endpoint URI: `ws://localhost:443`)
+
+Create `.env.local` file in the root folder and add the `NEXT_PUBLIC_SOCKET_URI` variable:
 
 ```dotenv
-NEXT_PUBLIC_SOCKET_URI="ws://localhost:443"
+NEXT_PUBLIC_SOCKET_URI="ws://localhost:1234"
 ```
 
 2) ## `SocketProvider`
@@ -26,7 +28,7 @@ NEXT_PUBLIC_SOCKET_URI="ws://localhost:443"
 Wrap main `<Component/>` with `SocketProvider`.
 
 ```typescript jsx
-import {SocketProvider} from "usesocket";
+import {SocketProvider} from "react-use-socket";
 
 const MyApp = ({Component, pageProps}) => (
     <SocketProvider>
@@ -38,10 +40,10 @@ export default MyApp
 
 3) ## `useSocket`
 
-The function `useSocket()` returns the `socket` object.
+The function `useSocket()` returns an object.
 
 ```typescript jsx
-import {useSocket} from "usesocket";
+import {useSocket} from "react-use-socket";
 import {ChangeEvent, KeyboardEvent, useEffect, useState} from "react";
 
 const App = () => {
