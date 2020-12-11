@@ -1,6 +1,6 @@
 # 1.0.5
 
-Initial release with fixes.
+Initial fixes.
 
 # 1.0.0
 
