@@ -1,4 +1,7 @@
 # react-use-socket
+  <a href="https://www.npmjs.com/package/svelte">
+    <img src="https://img.shields.io/npm/v/react-use-socket.svg" alt="npm version">
+  </a>
 
 React [hook](https://reactjs.org/docs/hooks-intro.html)
 for [Socket.io Client](https://github.com/socketio/socket.io-client).
